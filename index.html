@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main {
+            height: 50%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+
+
+        }
+
+        .main .logo1 {
+            height: 50px;
+            width: auto;
+
+        }
+
+        .main .logo1 img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main p {
+            color: rgba(255, 166, 0, 0.832);
+        }
+
+        .main1 {
+            height: 50%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+            overflow: hidden;
+        }
+
+        .main1 ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .main1 ul li {
+            list-style: none;
+            margin: 0 10px;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+
+        .background {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(39, 38, 38, 0.61), rgb(85, 81, 81)), url(./images1/header.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0 40px 0;
+
+
+        }
+
+        .background .page1-logo {
+            height: 300px;
+            width: auto;
+            padding: 80px 0 0 0;
+        }
+
+        .background .page1-logo img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .background .text-page1 {
+            text-align: center;
+            color: white;
+            align-items: center;
+        }
+
+        .background .text-page1 p {
+            font-size: 80px;
+            font-weight: bold;
+            margin: -10px 0 10px 0;
+
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: rgba(219, 108, 28, 0.479);
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+            border: none;
+            margin: 0 0 10PX 0;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        .btn:hover {
+            background-color: darkgoldenrod;
+        }
+
+        .class-working {
+            height: auto;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 70px 0;
+
+        }
+
+        .working-schedule {
+            padding: 0 20px;
+        }
+
+        .class-working .working-schedule h2 {
+            color: rgba(128, 128, 128, 0.633);
+            font-size: 20px;
+
+        }
+
+        .class-working .working-schedule p {
+            color: rgba(0, 0, 0, 0.677);
+            font-size: 30px;
+        }
+
+        .working-boximg img {
+            padding: 0 18px;
+        }
+
+        .story-journey {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 70px 20px;
+        }
+
+        .story-journey .journey-img {
+            height: 280px;
+            width: auto;
+            background-size: cover;
+
+            margin: 20px 0;
+        }
+
+
+        .story-journey .journey-img img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .story-journey .journey-text {
+            height: auto;
+            width: 300px;
+
+        }
+
+        .journey-text h3 {
+            color: rgba(128, 128, 128, 0.667);
+        }
+
+        .journey-text h2 {
+            font-size: 25px;
+            line-height: 30px;
+            color: rgba(0, 0, 0, 0.629);
+            margin: 0 0 12px 0;
+        }
+
+        .food-feature {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .food-feature .header h2 {
+            color: rgba(128, 128, 128, 0.637);
+            padding: 30px 0;
+        }
+
+        .food-feature .header p {
+            font-size: 30px;
+            margin: -35px 0 50px 0;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.705);
+        }
+
+        .food-feature .content h3 {
+            font-size: 20px;
+            margin: 50px 0 0;
+
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .food-img {
+            height: auto;
+            width: 100%;
+            display: flex;
+            padding: 10px 40px;
+        }
+
+        .food-img img {
+            height: 30%;
+            width: 20%;
+        }
+
+        .food-content h3 {
+            color: rgba(0, 0, 0, 0.73);
+            font-size: 15px;
+            margin: 10px 0 0 0;
+        }
+
+        .food-content p {
+            color: rgba(128, 128, 128, 0.664);
+            font-size: 15px;
+
+        }
+
+        .food-content span {
+            color: rgba(169, 87, 28, 0.827);
+        }
+
+        .team-header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .team-header h3 {
+            color: rgba(128, 128, 128, 0.781);
+        }
+
+        .team-header p {
+            font-size: 30px;
+            font-weight: 700;
+            color: rgba(0, 0, 0, 0.825);
+
+        }
+
+        .great-team {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .team-data {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+
+
+        }
+
+        .team-member {
+            height: auto;
+            width: 150px;
+            margin: 50px;
+        }
+
+        .team-member img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+        }
+
+        .team-member h2 {
+            color: rgba(0, 0, 0, 0.712);
+        }
+
+        .team-member p {
+            color: rgba(128, 128, 128, 0.753);
+        }
+
+        .team-logo {
+            height: 20px;
+            width: auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .team-logo img {
+            height: 20px;
+            width: auto;
+        }
+
+        .client-display {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 30px;
+
+        }
+
+        .client-data {
+            height: auto;
+            width: 100%;
+            border: 1px solid grey;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .client-card {
+            height: auto;
+            width: 100%;
+            display: flex;
+            text-align: center;
+        }
+
+        .client-img {
+            height: 60px;
+            width: auto;
+            margin: 0 0 0 10px;
+
+        }
+
+        .client-img img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .client-info h3 {
+            color: rgba(0, 0, 0, 0.714);
+        }
+
+        .client-info p {
+            color: rgba(128, 128, 128, 0.748);
+            margin: 0 0 0 10px;
+        }
+
+        .client-para {
+            color: rgba(128, 128, 128, 0.807);
+
+        }
+
+        .form-display {
+            padding: 50px 10px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .display-img {
+            height: auto;
+            width: 400px;
+        }
+
+        .display-img img {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+
+        .name {
+            margin: 10px 0;
+            width: 260px;
+            height: 44px;
+            padding: 0 0 0 20px;
+        }
+
+        .display-form {
+            width: 50%;
+            height: auto;
+        }
+
+
+        .logo2 img {
+            height: 80px;
+            width: auto;
+
+        }
+
+        .main2 {
+            margin: 40px 0 0 0;
+        }
+        .footer-display{
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+           
+        }
+        .copy-right{
+            color: rgb(10, 10, 11);
+        }
+        .logo3 {
+            height: 20px;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
+        }
+        .logo3 img{
+           height: 100%;
+           width: 100%;
+           margin: 0 10px 0 0;
+          
+        }
+
+        @media screen and (max-width:768px) {
+            .display-img {
+                display: none;
+            }
+
+            .background .text-page1 p {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            .btn {
+
+                font-size: 10px;
+                font-weight: 500;
+
+            }
+
+            .working-boximg {
+                text-align: center;
+            }
+
+            .main {
+                flex-direction: column;
+            }
+
+            .main1 {
+                flex-direction: column;
+            }
+
+            .main1 ul {
+                flex-direction: column;
+            }
+
+
+            .grey-text {
+                color: grey;
+            }
+
+            .story-journey .journey-text {
+                text-align: center;
+                margin: 60px 0;
+            }
+
+            .story-journey .journey-img {
+                margin: 50px 0;
+            }
+
+            .d-flex {
+                flex-wrap: wrap;
+            }
+
+            .client-display {
+                flex-wrap: wrap;
+            }
+
+            .form-display {
+                flex-wrap: wrap;
+            }
+            .logo3{
+                display: none;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo1">
+            <img src="./images1/navbar-brand.svg" alt="">
+        </div>
+        <p>CALL US : (123) 456 7890</p>
+    </div>
+
+    <div class="main1">
+        <ul>
+            <li>About us</li>
+            <li>Our service</li>
+            <li>Our team</li>
+            <li>Testmonials</li>
+        </ul>
+        <button class="btn">Components</button>
+    </div>
+    <div class="background">
+        <div class="page1-logo">
+            <img src="./images1/logo.svg" alt="">
+        </div>
+        <div class="text-page1">
+            <h2> Welcome To Our Restaurant</h2>
+            <p>Really Fresh & Tasty</p>
+            <button class="btn">Book A Table</button>
+        </div>
+
+    </div>
+
+
+    <div class="class-working">
+        <div class="working-schedule">
+            <h2>Opening Times</h2>
+            <p>Working Times</p>
+            <table>
+                <td>
+                    <tr>Monday - Thursday : <span class="grey-text">7:00 am - 12:00 pm</span></tr><br>
+                    <tr>Friday - Saturday : <span class="grey-text">7:00 am - Midnight</span></tr><br>
+                    <tr>Saturday - Sunday : <span class="grey-text">9:00 am - 12:00 pm</span></tr>
+                </td><br>
+                <button class="btn">Book A table </button>
+            </table>
+        </div>
+        <div class="working-boximg">
+            <img src="./images1/about-1.jpg" alt="">
+            <img src="./images1/about-2.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="story-journey">
+        <div class="journey-img">
+            <img src="./images1/about-3.jpg" alt="">
+
+        </div>
+
+        <div class="journey-img">
+            <img src="./images1/about-4.jpg" alt="">
+        </div>
+
+        <div class="journey-text">
+            <h3>The Great Story</h3>
+            <h2>Our Culinary Journey</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic illo a, aut, eum nesciunt obcaecati
+                deserunt ipsam nostrum voluptate recusandae?</p>
+        </div>
+    </div>
+    <div class="food-feature">
+        <div class=" food-feature header">
+            <h2>Featured Food</h2>
+            <p>Special Dishes </p>
+        </div>
+        <div class="d-flex">
+            <div class="food-img">
+                <img src="./images1/dish-1.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-img">
+                <img src="./images1/dish-2.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="food-img">
+                <img src="./images1/dish-3.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-img">
+                <img src="./images1/dish-4.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <div class="food-img">
+                <img src="./images1/dish-5.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+
+            <div class="food-img">
+                <img src="./images1/dish-6.jpg" alt="">
+                <div class="food-content">
+                    <h3>Aperiam incidunt dicta <span>$ 25</span></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing Eos, earum dicta est veniam beatae libero!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="team-header">
+            <h3> Great Team</h3>
+            <p>Talented Chefs</p>
+        </div>
+        <div class="great-team">
+            <div class="team-data">
+                <div class="team-member">
+                    <img src="./images1/chef-1.jpg" alt="">
+                    <h2>Brian Scott</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
+                        reiciendis!
+                    </p>
+                    <div class="team-logo">
+                        <img src="./images1/facebook.png" alt="">
+                        <img src="./images1/instagram.png" alt="">
+                        <img src="./images1/twitter.png" alt="">
+                        <img src="./images1/google-plus-logo-on-black-background.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="team-member">
+                    <img src="./images1/chef-2.jpg" alt="">
+                    <h2>Ed. Steve</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
+                        reiciendis!
+                    </p>
+                    <div class="team-logo">
+                        <img src="./images1/facebook.png" alt="">
+                        <img src="./images1/instagram.png" alt="">
+                        <img src="./images1/twitter.png" alt="">
+                        <img src="./images1/google-plus-logo-on-black-background.png" alt="">
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <img src="./images1/chef-3.jpg" alt="">
+                    <h2>Richard Reb</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente suscipit, odio nulla
+                        reiciendis!
+                    </p>
+                    <div class="team-logo">
+                        <img src="./images1/facebook.png" alt="">
+                        <img src="./images1/instagram.png" alt="">
+                        <img src="./images1/twitter.png" alt="">
+                        <img src="./images1/google-plus-logo-on-black-background.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="client-display">
+            <div class="client-data">
+                <div class="client-card">
+                    <div class="client-img">
+                        <img src="./images1/avatar.jpg" alt="">
+                    </div>
+                    <div class="client-info">
+                        <h3>John Doe</h3>
+                        <p>Business Analyst</p>
+                    </div>
+                </div>
+                <p class="client-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id
+                    dicta reiciendis
+                    itaque.</p>
+            </div>
+
+            <div class="client-data">
+                <div class="client-card">
+                    <div class="client-img">
+                        <img src="./images1/avatar-1.jpg" alt="">
+                    </div>
+                    <div class="client-info">
+                        <h3>Maria Garcia</h3>
+                        <p>Insurance Agent</p>
+                    </div>
+                </div>
+                <p class="client-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id
+                    dicta reiciendis
+                    itaque.</p>
+            </div>
+
+            <div class="client-data">
+                <div class="client-card">
+                    <div class="client-img">
+                        <img src="./images1/avatar-2.jpg" alt="">
+                    </div>
+                    <div class="client-info">
+                        <h3>Mason Miller</h3>
+                        <p>Residential Appraiser</p>
+                    </div>
+                </div>
+                <p class="client-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim modi, id
+                    dicta reiciendis
+                    itaque.</p>
+            </div>
+        </div>
+
+        <div class="form-display">
+            <div class="display-img">
+                <img src="./images1/contact.jpg" alt="">
+            </div>
+
+            <div class="display-form">
+                <form>
+                    <label>
+                        <input type="text" name="your name" class="name" placeholder="Enter Your Name">
+                        <br>
+                        <input type="tele" value="" class="name" placeholder="Your Phone">
+                        <br>
+                        <input type="date" value="date" class="name">
+                        <br>
+                        <input type="number" value="Seats" class="name" placeholder="Seats">
+
+                    </label>
+                    <br>
+
+                    <button class="btn"> Book A Table</button>
+            </div>
+
+        </div>
+        <div class="main1">
+            <div class="logo2">
+                <img src="./images1/navbar-brand.svg" alt="">
+            </div>
+            <div class="main2">
+                <ul>
+                    <li>Our Company</li>
+                    <li>Our Location</li>
+                    <li>Help Center</li>
+                    <li>Components</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-display">
+        <div class="copy-right">
+            <p>© 2045, DevCRUD All rights reserved</p>
+        </div>
+        <div class="logo3">
+            <img src="./images1/facebook.png" alt="">
+            <img src="./images1/instagram.png" alt="">
+            <img src="./images1/twitter.png" alt="">
+            <img src="./images1/google-plus-logo-on-black-background.png" alt="">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
